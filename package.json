@@ -1,28 +1,38 @@
 {
-  "name": "hrr49-cowlist",
+  "name": "CFB",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "client:dev": "webpack-dev-server --watch",
-    "server:dev": "nodemon server/index.js"
+    "start": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/warmSnowyMorning/hrr49-cowlist.git"
+    "url": "https://github.com/JPK312/CFB"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/warmSnowyMorning/hrr49-cowlist/issues"
+    "url": "https://github.com/JPK312/CFB"
   },
-  "homepage": "https://github.com/warmSnowyMorning/hrr49-cowlist#readme",
+  "homepage": "https://github.com/JPK312/CFB",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "cfb-data": "^4.0.0",
+    "cfb.js": "^2.3.4",
+    "css-loader": "^5.0.1",
     "express": "^4.17.1",
+    "mdbreact": "^5.0.1",
+    "ncaa-stats": "^2.0.0",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
+    "style-loader": "^2.0.0",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
@@ -31,6 +41,8 @@
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
     "babel-loader": "^8.0.6",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^7.0.1",
     "nodemon": "^2.0.6",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",

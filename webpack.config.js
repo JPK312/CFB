@@ -11,11 +11,37 @@ module.exports = {
     path: dist
   },
   module: {
-    rules: [{
-      loader: 'babel-loader',
+    rules: [
+    {
+      use: {
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/preset-env",
+          "@babel/preset-react"]
+        }
+      },
       test: /\.js$/,
-      exclude: /node_modules/
-    }]
+      exclude: /node_modules/,
+      parser: {
+        amd: false
+      }
+    },
+    {
+      test: /\.css$/i,
+      use:["style-loader", "css-loader"]
+    },
+    {
+      test: /\.(jpe?g|png|gif|svg)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]'
+          }
+        }
+      ]
+    }
+  ]
   },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
