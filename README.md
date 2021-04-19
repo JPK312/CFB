@@ -32,8 +32,9 @@ npm
 
 ## Development
 Executing the code below will install dependencies, start the server, and start webpack.
-
+```
 npm install
 npm build
 npm client:dev
 npm start
+```
