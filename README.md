@@ -18,7 +18,7 @@ npm
 Features
 Team Stats: Table where a user can view the teams total rankings and avg against the entire cfb landscape for both offense and defense. 
 Users can also view two other tables, one for viewing the entire roster and individual infomation for each player. 
-The other table to view incoming recruits adn their information. 
+The other table to view incoming recruits adn their information. All information is provided by several APIs.
 
 Usage
 To run this repo, you will need to install dependencies and run appropriate scripts.
